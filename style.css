@@ -34,6 +34,7 @@ a:-webkit-any-link {
 .active.fadeLeft {
   animation: fadeLeft .5s ease-in;
 }
+
 @keyframes fadeUp {
   0% {
     transform: translateY(10vh);
@@ -44,6 +45,7 @@ a:-webkit-any-link {
     opacity: 1;
   }
 }
+
 @keyframes fadeRight {
   0% {
     transform: translateX(-5vw);
@@ -141,12 +143,10 @@ a:-webkit-any-link {
 
   /*FIXME #5 make active page thing work*/
 
-  /*
   .navbarPages a.active {
-    background-color: #04AA6D;
-    color: white;
+    font-weight: bolder;
   }
-  */
+  
     
   /* Navbar hide links for small windows */
   .navbarPages .dropdownIcon {
