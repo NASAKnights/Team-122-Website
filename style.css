@@ -1,5 +1,6 @@
 /* ------------------------------ General -----------------------------*/
 
+/* Global color variables */
 :root {
   --lightblue: rgb(0, 107, 195);
   --lightnavy: rgb(39, 56, 78);
@@ -7,16 +8,20 @@
   --darknavy: rgb(18, 26, 36);
 }
 
+/* Removing white border */
 body {
   margin: 0;
 }
 
+/* Removing default link styling */
 a:-webkit-any-link {
   color:inherit;
   cursor: pointer;
   text-decoration:inherit;
 }
 
+
+/* ---------- Animation Effects ----------*/
 .reveal {
   position: relative;
   opacity: 0;
@@ -140,9 +145,6 @@ a:-webkit-any-link {
   }
     
   /* Navbar highlight active page */
-
-  /*FIXME #5 make active page thing work*/
-
   .navbarPages a.active {
     font-weight: bolder;
   }
@@ -153,8 +155,9 @@ a:-webkit-any-link {
     display: none;
   }
 
-/* ------------------------------ Home Page -----------------------------*/
+/* ------------------------------ Index -----------------------------*/
 
+/* Top section of Index */
 .banner {
   background: url(images/banner.JPG);
   background-repeat: no-repeat;
@@ -169,7 +172,7 @@ a:-webkit-any-link {
   gap: 2vw;
 }
 
-
+/* "Meet Monty" */
 .bannerText {
   font-family: 'Bruno Ace';
   font-size: 7vw;
@@ -180,6 +183,7 @@ a:-webkit-any-link {
   text-shadow: 1px 7px 15px black;
 }
 
+/* "Learn More" button on banner" */
 .bannerButton {
   display: inline-block;
   padding: .7em 1.9em;
@@ -199,6 +203,7 @@ a:-webkit-any-link {
   color: rgba(0, 0, 0, 0.8);
 }
 
+/* "Learn More" buttons on sections */
 .sectButton {
   display: inline-block;
   padding: .7em 1.9em;
@@ -219,6 +224,7 @@ a:-webkit-any-link {
   color: rgba(0, 0, 0, 0.8);
 }
 
+/* First section below banner */
 .sect1 {
   background: url(images/news.jpg);
   background-repeat: no-repeat;
@@ -233,6 +239,7 @@ a:-webkit-any-link {
   box-shadow: inset 0px 5px 12px 0px rgba(0, 0, 0, 0.56);
 }
 
+/* Section 1's container for text */
 .sect1Text {
   background-image: linear-gradient(var(--lightblue)0.75%, var(--mediumnavy)0.75%);
   width: 100vw;
@@ -245,6 +252,7 @@ a:-webkit-any-link {
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
 }
 
+/* Section 1's Title */
 .sect1Title {
   font-family: 'Bruno Ace';
   font-size: 1.5vw;
@@ -254,6 +262,7 @@ a:-webkit-any-link {
   margin: 0;
 }
 
+/* Section one's paragraphs */
 .sect1Para {
   font-family: 'Comme';
   font-size: 1vw;
@@ -262,6 +271,7 @@ a:-webkit-any-link {
   margin: 0;
 }
 
+/* Second section below banner */
 .sect2 {
   background: url(images/compstrat.jpg);
   background-repeat: no-repeat;
@@ -276,6 +286,7 @@ a:-webkit-any-link {
   box-shadow: inset 0px 8px 12px 0px rgba(0, 0, 0, .56);
 }
 
+/* Section 2's container for text */
 .sect2Text {
   background-image: linear-gradient(to right, var(--lightblue)0.75%, var(--mediumnavy)0.75%);
   width: 30vw;
@@ -288,6 +299,7 @@ a:-webkit-any-link {
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
 }
 
+/* Section 2's Title */
 .sect2Title {
   font-family: 'Bruno Ace';
   font-size: 1.5vw;
@@ -297,6 +309,7 @@ a:-webkit-any-link {
   margin: 0;
 }
 
+/* Section 2's paragraphs */
 .sect2Para {
   font-family: 'Comme';
   font-size: 1vw;
@@ -305,6 +318,7 @@ a:-webkit-any-link {
   margin: 0;
 }
 
+/* contact section */
 .contact {
   background: var(--darknavy);
   display: flex;
@@ -315,6 +329,7 @@ a:-webkit-any-link {
   color: rgba(255, 255, 255, .5);
 }
 
+/* 3 containers for contact content */
 .contactSpan {
   display: flex;
   flex-direction: column;
@@ -325,23 +340,27 @@ a:-webkit-any-link {
   padding: 5% 0;
 }
 
+/* 3 titles for contact sections */
 .contactTitles {
   font-family: 'Bruno Ace';
   font-size: 2vw;
   font-weight: bolder;
 }
 
+/* 3 icons for contact section */
 .contactIcon {
   font-size: 7vw;
   margin: 1.5vw 0;
 }
 
+/* 3 descriptions for contact section */
 .contactDescr {
   font-family: 'Comme';
   font-size: 1.3vw;
   text-align: center;
 }
 
+/* 3 buttons in contact section */
 .contactButton {
   display: inline-block;
   padding: .7em 1.9em;
@@ -361,9 +380,32 @@ a:-webkit-any-link {
   background: rgba(255, 255, 255, 0.85);
   color: rgba(0, 0, 0, 0.8);
 }
+/* ----------------------------- About -----------------------------*/
+.topImage {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  display: block;
+}
 
-/* ------------------------------ Footer -----------------------------*/
 
+
+
+/* ----------------------------- Team -----------------------------*/
+
+
+/* ---------------------------- Sponsors -----------------------------*/
+
+
+/* ---------------------------- Tutorials -----------------------------*/
+
+
+/* ------------------------------ Blog -----------------------------*/
+
+
+/* ----------------------------- Footer -----------------------------*/
+
+/* footer section */
 .footer {
   background: var(--mediumnavy);
   display: flex;
@@ -372,8 +414,10 @@ a:-webkit-any-link {
   justify-content: center;
   height: 25vh;
   gap: 20px;
+  width: 100vw
 }
 
+/* footer social media icon container */
 .smButtons {
   display: flex;
   justify-content: space-between;
@@ -382,6 +426,7 @@ a:-webkit-any-link {
   color: rgba(255, 255, 255, .7);
 }
 
+/* "FRC NASA Knights 122 " */
 .footerText {
   font-family: 'Bruno Ace';
   font-size: 1vw;
