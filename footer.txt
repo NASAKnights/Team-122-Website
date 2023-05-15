@@ -1,0 +1,35 @@
+<div class="contact">
+  <span class="contactSpan">
+    <h1 class="contactTitles">Contact</h1>
+    <span class="contactIcon">
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </span>
+    <p class="contactDescr">Reach out to find out more or get involved</p>
+    <button onclick="window.location.href='about.html';" class="contactButton" type="button">Learn More</button>
+  </span>
+  <span class="contactSpan">
+    <h1 class="contactTitles">Team</h1>
+    <span class="contactIcon">
+      <i class="fa fa-users" aria-hidden="true"></i>
+    </span>
+    <p class="contactDescr">Learn about the team</p>
+    <button onclick="window.location.href='team.html';" class="contactButton" type="button">Learn More</button>
+  </span>
+  <span class="contactSpan">
+    <h1 class="contactTitles">Sponsors</h1>
+    <span class="contactIcon">
+      <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+    </span>
+    <p class="contactDescr">Help support the NASA Knights!</p>
+    <button onclick="window.location.href='sponsors.html';" class="contactButton" type="button">Learn More</button>
+  </span>
+</div>
+<div class="footer">
+  <span class="smButtons">
+    <a href="#" class="fa fa-github"></a>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-envelope"></a>
+  </span>
+  <p class="footerText">FRC NASA Knights 122</p>
+</div>

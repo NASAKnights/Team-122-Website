@@ -1,0 +1,18 @@
+<div id="NavContainer" class="navbar">
+    <span id="Navbar">
+      <span onclick="window.location.href='index.html';" class="home">
+        <img class="homeIcon" src="images/icon.png">
+        <a class="homeLink">122 NASA Knights</a>
+      </span>
+      <span id="NavbarPages" class="navbarPages">
+        <a class="navbarSpacer"> X </a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="tutorials">Tutorials</a>
+        <a href="blog">Blog</a>
+        <a href="javascript:void(0);" class="dropdownIcon" onclick="dropdown()">
+          <i class="fa fa-bars"></i></a>
+      </span>
+    </span>
+</div>
