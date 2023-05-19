@@ -26,10 +26,10 @@
 </div>
 <div class="footer">
   <span class="smButtons">
-    <a href="#" class="fa fa-github"></a>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-envelope"></a>
+    <a href="https://github.com/NASAKnights" class="fa fa-github"></a>
+    <a href="https://facebook.com/frc122" class="fa fa-facebook"></a>
+    <a href="https://instagram.com/nasaknight.122" class="fa fa-instagram"></a>
+    <a href="mailto:frcnasaknights122@gmail.com" class="fa fa-envelope"></a>
   </span>
   <p class="footerText">FRC NASA Knights 122</p>
 </div>
