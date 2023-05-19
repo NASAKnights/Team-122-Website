@@ -36,17 +36,14 @@ function reveal() {
   }
 }
 
-function responsiveReveal() {
-  var revealLeft = document.querySelectorAll(".fadeLeft");
-    var windowWidth = window.innerWidth;
-    if (windowWidth < 900) {
-      revealLeft.classList.remove("fadeLeft");
-      revealLeft.classList.add("fadeUp");
-    }
+function scrollSect1() {
+  document.getElementById("sect1").scrollIntoView();
+}
+function scrollSect2() {
+  document.getElementById("sect2").scrollIntoView();
 }
 
 window.addEventListener("scroll", reveal);
 
 //Run these on page load
-responsiveReveal();
 reveal();
