@@ -81,6 +81,9 @@ a:-webkit-any-link {
     width: 100%;
     transition: .35s;
     transition-timing-function: ease-out;
+    z-index:1;
+    box-shadow: outset 0px 5px 12px 0px rgba(0, 0, 0, 0.3);
+
 }
   
   /* Navbar home links container */
@@ -169,6 +172,7 @@ a:-webkit-any-link {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2vw;
 }
 
@@ -181,6 +185,7 @@ a:-webkit-any-link {
   color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   text-shadow: 1px 7px 15px black;
+  text-align: center;
 }
 
 /* "Learn More" button on banner" */
@@ -255,20 +260,21 @@ a:-webkit-any-link {
 /* Section 1's Title */
 .sect1Title {
   font-family: 'Bruno Ace';
-  font-size: 1.5vw;
+  font-size: 130%;
   font-weight: bolder;
   color: rgba(255, 255, 255, 0.8);
-  padding: 2em 0 0 1.75em; /*hidden: revert to 0 0 0 1.75em*/
+  padding: 1.5em 0 0 1.75em; /*hidden: revert to 0 0 0 1.75em*/
   margin: 0;
 }
 
 /* Section one's paragraphs */
 .sect1Para {
   font-family: 'Comme';
-  font-size: 1vw;
+  font-size: 100%;
   color: rgba(255, 255, 255, 0.8);
   padding: 0 4em;
   margin: 0;
+  width: 80vw;
 }
 
 /* Second section below banner */
@@ -289,7 +295,7 @@ a:-webkit-any-link {
 /* Section 2's container for text */
 .sect2Text {
   background-image: linear-gradient(to right, var(--lightblue)0.75%, var(--mediumnavy)0.75%);
-  width: 30vw;
+  width: 40vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -302,7 +308,7 @@ a:-webkit-any-link {
 /* Section 2's Title */
 .sect2Title {
   font-family: 'Bruno Ace';
-  font-size: 1.5vw;
+  font-size: 130%;
   font-weight: bolder;
   color: rgba(255, 255, 255, 0.8);
   padding: 2.5em 0 0 1.75em;
@@ -312,9 +318,9 @@ a:-webkit-any-link {
 /* Section 2's paragraphs */
 .sect2Para {
   font-family: 'Comme';
-  font-size: 1vw;
+  font-size: 100%;
   color: rgba(255, 255, 255, 0.8);
-  padding: 0 4em;
+  padding: 0 3vw;
   margin: 0;
 }
 
@@ -482,8 +488,52 @@ a:-webkit-any-link {
 /* --------------------- media queries: 900px --------------------------*/
 
 /* when screen is smaller than 900px */
-@media screen and (max-width: 900px) {}
-
-
-/* when screen is smaller than 900px */
-@media screen and (min-width: 900px) {}
+@media screen and (max-width: 900px) {
+  .bannerText {font-size: 20vw;}
+  .banner {
+    background: linear-gradient(rgba(0, 16, 38, 0.5), rgba(0, 13, 30, 0.5)), url(images/banner.JPG);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .sect1Text {background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);}
+  .sect1Title {
+    font-size: 5vw;
+    padding: 1em 0 0 1.75em;
+  }
+  .sect1Para {
+    font-size: 80%;
+    padding: 0 7%;
+    width: auto;
+  }
+  .sect2 {align-items: flex-end;}
+  .sect2Text {
+    width: 100vw;
+    height: 40vh;
+    background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
+  }
+  .sect2Title {
+    font-size: 5vw;
+    padding: 1em 0 0 1.75em;
+  }
+  .sect2Para {
+    font-size: 80%;
+    padding: 0 7%;
+  }
+  .contactSpan {width: 40vw;}
+  .contactTitles {font-size: 3.5vw;}
+  .contactIcon {font-size: 15vw;}
+  .contactDescr {font-size: 2.2vw;}
+  .contactButton {
+    font-size: 1.5vw;
+    padding: 1.1em 2.8em;
+  }
+  .smButtons {
+    width: 20vw;
+    font-size: 4vw;
+  }
+  .footerText {
+    font-size: 2vw;
+  }
+}

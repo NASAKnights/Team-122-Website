@@ -36,7 +36,17 @@ function reveal() {
   }
 }
 
+function responsiveReveal() {
+  var revealLeft = document.querySelectorAll(".fadeLeft");
+    var windowWidth = window.innerWidth;
+    if (windowWidth < 900) {
+      revealLeft.classList.remove("fadeLeft");
+      revealLeft.classList.add("fadeUp");
+    }
+}
+
 window.addEventListener("scroll", reveal);
 
-// To check the scroll position on page load
+//Run these on page load
+responsiveReveal();
 reveal();
