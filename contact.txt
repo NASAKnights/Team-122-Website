@@ -1,4 +1,4 @@
-<div class="contact">
+<div class="contact" id="contact">
   <span class="contactSpan">
     <h1 class="contactTitles">Contact</h1>
     <span class="contactIcon">

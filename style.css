@@ -248,7 +248,8 @@ a:-webkit-any-link {
 .sect1Text {
   background-image: linear-gradient(var(--lightblue)0.75%, var(--mediumnavy)0.75%);
   width: 100vw;
-  height: 40vh;
+  height: auto;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -275,6 +276,28 @@ a:-webkit-any-link {
   padding: 0 4em;
   margin: 0;
   width: 80vw;
+}
+
+.sect1Down {
+  transition: .3s;
+  color: rgba(255, 255, 255, 0.882);
+  font-size: 200%;
+  text-shadow: 0px 7px 15px black;
+  position: absolute;
+  bottom: 20%;
+  right: 50%;
+  left: 50%;
+}
+
+.sect1Down:hover {
+  font-size: 250%;
+  text-shadow: 0px 18px 15px black;
+  right: 49.7%;
+  left: 49.7%;
+}
+
+.sect1Spacer {
+  padding: 5%;
 }
 
 /* Second section below banner */
@@ -323,6 +346,20 @@ a:-webkit-any-link {
   color: rgba(255, 255, 255, 0.8);
   padding: 0 3vw;
   margin: 0;
+}
+
+.sect2Down {
+  transition: .3s;
+  color: rgba(255, 255, 255, 0.882);
+  font-size: 200%;
+  width: 100%;
+  text-shadow: 0px 7px 15px black;
+  text-align: center;
+}
+
+.sect2Down:hover {
+  font-size: 250%;
+  text-shadow: 0px 18px 15px black;
 }
 
 /* contact section */
@@ -499,20 +536,24 @@ a:-webkit-any-link {
     background-attachment: fixed;
     background-size: cover;
   }
-  .sect1Text {background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);}
+  .sect1Text {
+    background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
+    min-height: unset;
+  }
   .sect1Title {
     font-size: 5vw;
     padding: 1em 0 0 1.75em;
   }
   .sect1Para {
     font-size: 80%;
-    padding: 0 7%;
+    padding: 0 7% 0 7%;
     width: auto;
   }
   .sect2 {align-items: flex-end;}
   .sect2Text {
     width: 100vw;
-    height: 40vh;
+    height: auto;
+    min-height: unset;
     background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
   }
   .sect2Title {

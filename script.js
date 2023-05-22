@@ -42,6 +42,9 @@ function scrollSect1() {
 function scrollSect2() {
   document.getElementById("sect2").scrollIntoView();
 }
+function scrollSect3() {
+  document.getElementById("contact").scrollIntoView();
+}
 
 window.addEventListener("scroll", reveal);
 
