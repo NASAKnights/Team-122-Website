@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEXWT68NP8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+     <title>122 Nasa Knights</title>
 
-        gtag('config', 'G-MEXWT68NP8');
-    </script> 
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>122 Nasa Knights</title>
-    
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="script.js" defer></script>
-    
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Bruno Ace' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Comme' rel='stylesheet'>
-
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-
+      
+      <div id="metaplace">
+        <script>$(function(){
+          $("#metaplace").load("/templates/meta.txt");
+        });</script>
+      </div>
   </head>
 
   <body>
-              <!-- This provides the navbar for the webpage -->
-              <div id="navplace"></div>
-              <script>$(function(){
-                $("#navplace").load("navbar.txt");
-              });</script>
+    <div id="navplace">
+      <script>$(function(){
+        $("#navplace").load("/templates/navbar.txt");
+      });</script>
+    </div>
 
     <div class="banner">
       <span class="bannerText">Meet Atlas</span>
@@ -45,13 +30,10 @@
 
     <div class="sect1" id="sect1">
       <div class="sect1Text reveal fadeUp">
-        <h1 class="sect1Title">Competitive Strategy</h1>
+        <h1 class="sect1Title"></h1>
         <p class="sect1Para">
           Each year for the FIRST Robotics Competition, we are met with a new game that requires us to design and build a robot. We evaluate the game and look at strategies that could help us win competitions with our alliance. We look at the rules, scoring, and penalties and decide what kind of robot would be best. We work with our drive team to ensure the controls are intuitive and work well. At our competitions, we strategize with our alliance members to score as high as possible.
         </p>
-        <!--hidden: uncomment this 
-        <button onclick="window.location.href='about.html';" class="sectButton" type="button">Learn More</button>
-        -->
         <span class="sect1Down">
           <a onclick="scrollSect2()" class="fa fa-caret-down"> </a>
         </span>
@@ -66,26 +48,23 @@
         <p class="sect2Para">
           After we learn the rules of the game and possible strategies we can employ, we begin our design process. We start by looking at any robot constraints we have and then brainstorm ideas for different mechanisms on the robot. We then narrow our choices and test concepts we are interested in. As we do this, we evaluate product architecture and industrial design by building for modularity and with our drive team in mind. Then we prototype our ideas and improve upon them.
         </p>
-        <!--hidden: uncomment this 
-        <button onclick="window.location.href='about.html';" class="sectButton" type="button">Learn More</button>
-        -->
         <span class="sect2Down">
           <a onclick="scrollSect3()" class="fa fa-caret-down"> </a>
         </span>
+        <span class="sect1Spacer"></span>
       </div>
     </div>
 
-              <!-- This provides the footer for the page -->
-              <div id="contactplace"></div>
-              <script>$(function(){
-                $("#contactplace").load("contact.txt");
-              });</script>
-
-              <!-- This provides the footer for the page -->
-              <div id="footerplace"></div>
-              <script>$(function(){
-                $("#footerplace").load("footer.txt");
-              });</script>
+    <div id="contactplace">
+      <script>$(function(){
+        $("#contactplace").load("/templates/contact.txt");
+      });</script>
+    </div>
+    <div id="footerplace">
+      <script>$(function(){
+        $("#footerplace").load("/templates/footer.txt");
+      });</script>
+    </div>
 
   </body>
 

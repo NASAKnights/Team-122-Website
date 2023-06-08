@@ -136,7 +136,7 @@ a:-webkit-any-link {
   /* Navbar links */
   .navbarPages a {
     float: left;
-    display: none; /*hidden: revert to "block"*/
+    display: block; 
     font-family: 'Bruno Ace';
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -228,6 +228,7 @@ a:-webkit-any-link {
   color: rgba(0, 0, 0, 0.8);
 }
 
+
 /* First section below banner */
 .sect1 {
   background: url(images/news.jpg);
@@ -240,7 +241,7 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   box-shadow: inset 0px 5px 12px 0px rgba(0, 0, 0, 0.56);
 }
 
@@ -253,7 +254,7 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start; /* hidden: revert to center*/
+  justify-content: conter; 
   gap: 2.5vw;
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
 }
@@ -264,7 +265,7 @@ a:-webkit-any-link {
   font-size: 130%;
   font-weight: bolder;
   color: rgba(255, 255, 255, 0.8);
-  padding: 1.5em 0 0 1.75em; /*hidden: revert to 0 0 0 1.75em*/
+  padding: 1.5em 0 0 1.75em;
   margin: 0;
 }
 
@@ -290,7 +291,7 @@ a:-webkit-any-link {
 }
 
 .sect1Down:hover {
-  font-size: 250%;
+  font-size: 220%;
   text-shadow: 0px 18px 15px black;
   right: 49.7%;
   left: 49.7%;
@@ -352,13 +353,15 @@ a:-webkit-any-link {
   transition: .3s;
   color: rgba(255, 255, 255, 0.882);
   font-size: 200%;
-  width: 100%;
   text-shadow: 0px 7px 15px black;
-  text-align: center;
+  position: absolute;
+  bottom: 20%;
+  right: 50%;
+  left: 50%;
 }
 
 .sect2Down:hover {
-  font-size: 250%;
+  font-size: 220%;
   text-shadow: 0px 18px 15px black;
 }
 
@@ -425,7 +428,7 @@ a:-webkit-any-link {
   background: rgba(255, 255, 255, 0.85);
   color: rgba(0, 0, 0, 0.8);
 }
-/* ----------------------------- About -----------------------------*/
+/* ----------------------------- Pages -----------------------------*/
 .topImage {
   width: 100vw;
   height: 60vh;
@@ -433,8 +436,72 @@ a:-webkit-any-link {
   display: block;
 }
 
+.pageTitle {
+  display: flex;
+}
+.pageTitleText {
+  font-family: 'Bruno Ace';
+  font-size: 6vw;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-shadow: 1px 7px 15px black;
+  text-align: center;
+}
 
+/* First section below banner */
+.page {
+  background: url(images/news.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: inset 0px 5px 12px 0px rgba(0, 0, 0, 0.56);
+}
 
+/* Section 1's container for text */
+.pageBody {
+  background-image: linear-gradient(var(--lightblue)0.75%, var(--mediumnavy)0.75%);
+  width: 100vw;
+  height: auto;
+  min-height: 150vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; 
+  gap: 2.5vw;
+  box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
+  padding: 3% 0 10% 0;
+  
+}
+
+/* Section 1's Title */
+.pageHeaders {
+  font-family: 'Bruno Ace';
+  font-size: 130%;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 4%;
+  margin: 0;
+  
+}
+
+/* Section one's paragraphs */
+.pagePara {
+  font-family: 'Comme';
+  font-size: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 4em;
+  margin: 0;
+  width: 80vw;
+}
 
 /* ----------------------------- Team -----------------------------*/
 
@@ -497,7 +564,7 @@ a:-webkit-any-link {
     }
     .navbarPages.responsive a {
       float: none;
-      display: none; /*hidden: revert to "block"*/
+      display: block; 
       text-align: right;
     }
     .navbarPages a {
@@ -507,7 +574,6 @@ a:-webkit-any-link {
     .navbarPages a.dropdownIcon {
       float: right;
       display: block;
-      color: transparent; /*hidden: delete this line*/
     }
 
     .navbar {background-image: linear-gradient(rgba(5, 20, 57, 1) 98%, transparent);}

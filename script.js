@@ -1,4 +1,3 @@
-/* hidden: uncomment this
 function dropdown() {
     var x = document.getElementById("NavbarPages");
     if (x.className === "navbarPages") {
@@ -9,7 +8,6 @@ function dropdown() {
 
   }
 
-*/
 
 navbarShift = "-80px";
 
