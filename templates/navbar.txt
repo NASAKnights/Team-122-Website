@@ -1,17 +1,17 @@
 <div id="NavContainer" class="navbar">
     <span id="Navbar">
-      <span onclick="window.location.href='./index.html';" class="home">
-        <img class="homeIcon" src="./images/icon.png">
+      <span onclick="window.location.href='../index.html';" class="home">
+        <img class="homeIcon" src="../images/icon.png">
         <a class="homeLink">122 NASA Knights</a>
       </span>
       <span id="NavbarPages" class="navbarPages">
         <a class="navbarSpacer"> X </a>
-        <a href="./pages/about.html">About</a>
-        <a href="./pages/sponsors.html">Sponsors</a>
-        <a href="./pages/contact.html">Contact Us</a>
-        <a href="./pages/team.html">Team</a>
-        <a href="./pages/robot.html">Our Robots</a>
-        <a href="./pages/media.html">Media</a>
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/sponsors.html">Sponsors</a>
+        <a href="../pages/contact.html">Contact Us</a>
+        <a href="../pages/team.html">Team</a>
+        <a href="../pages/robot.html">Our Robots</a>
+        <a href="../pages/media.html">Media</a>
         <a href="javascript:void(0);" class="dropdownIcon" onclick="dropdown()">
           <i class="fa fa-bars"></i></a>
 
