@@ -367,12 +367,16 @@ a:-webkit-any-link {
 
 .calCont {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--mediumnavy);
 }
 
 .calendar {
-  width: 80vw;
-  height: 600px;
+  width: 70vw;
+  height: 80vh;
   padding: 2% 0 2% 0;
 }
 
@@ -639,6 +643,10 @@ a:-webkit-any-link {
   }
   .pagePara {
     font-size: 85%;
+  }
+  .calendar {
+    width: 90vw;
+    height: 80vw;
   }
 }
 
