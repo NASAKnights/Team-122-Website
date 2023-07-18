@@ -35,10 +35,13 @@ function reveal() {
 }
 
 function scrollSect1() {
-  document.getElementById("sect1").scrollIntoView();
+  document.getElementById("section1").scrollIntoView();
 }
 function scrollSect2() {
-  document.getElementById("sect2").scrollIntoView();
+  document.getElementById("section2").scrollIntoView();
+}
+function scrollCalendar(){
+  document.getElementById("calendar").scrollIntoView();
 }
 function scrollSect3() {
   document.getElementById("contact").scrollIntoView();
