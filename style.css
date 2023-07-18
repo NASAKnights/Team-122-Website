@@ -254,7 +254,7 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: conter; 
+  justify-content: center; 
   gap: 2.5vw;
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
 }
@@ -363,21 +363,6 @@ a:-webkit-any-link {
 .sect2Down:hover {
   font-size: 220%;
   text-shadow: 0px 18px 15px black;
-}
-
-.calCont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  background-color: var(--mediumnavy);
-}
-
-.calendar {
-  width: 70vw;
-  height: 80vh;
-  padding: 2% 0 2% 0;
 }
 
 /* contact section */
@@ -491,7 +476,6 @@ a:-webkit-any-link {
   justify-content: flex-start; 
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
   padding: 3% 0 0 0;
-  
 }
 
 /* Section 1's Headers */
@@ -534,9 +518,24 @@ a:-webkit-any-link {
   text-indent: 1em;
 }
 
-.pageImage {
-  width: 80vw;
-  margin: 5vh auto;
+.pageDown {
+  transition: .3s;
+  color: rgba(255, 255, 255, 0.882);
+  font-size: 200%;
+  text-shadow: 0px 7px 15px black;
+  position: absolute;
+  bottom: 20%;
+  right: 50%;
+  left: 50%;
+}
+
+.pageDown:hover {
+  font-size: 220%;
+  text-shadow: 0px 18px 15px black;
+}
+
+.pageSpacer {
+  padding: 5%;
 }
 
 /* ----------------------------- Team -----------------------------*/
@@ -644,10 +643,10 @@ a:-webkit-any-link {
   .pagePara {
     font-size: 85%;
   }
-  .calendar {
+  /* .calendar {
     width: 90vw;
     height: 80vw;
-  }
+  } */
 }
 
 /* --------------------- media queries: 950px --------------------------*/
