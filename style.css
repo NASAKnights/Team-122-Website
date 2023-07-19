@@ -368,17 +368,10 @@ a:-webkit-any-link {
 
 /* First section below banner */
 .page {
-  background: url(images/news.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-  height: fit-content;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   box-shadow: inset 0px 5px 12px 0px rgba(0, 0, 0, 0.56);
 }
 
@@ -503,13 +496,23 @@ a:-webkit-any-link {
 }
 
 /* --------------------- Background Images -----------------------------*/
-.imagesCompstrat {
+.imagesHomepageSectionTwo {
   background: url(images/compstrat.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
+}
+
+.imagesHomepageSectionOne {
+  background: url(images/news.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 150vh;
   width: 100vw;
 }
 
@@ -525,31 +528,31 @@ a:-webkit-any-link {
     background-attachment: fixed;
     background-size: cover;
   }
-  .sect1Text {
+  .pageHeaders {
     background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
     min-height: unset;
   }
-  .sect1Title {
+  .pageHeaders {
     font-size: 5vw;
     padding: 1em 0 0 1.75em;
   }
-  .sect1Para {
+  .pagePara {
     font-size: 80%;
     padding: 0 7% 0 7%;
     width: auto;
   }
-  .sect2 {align-items: flex-end;}
-  .sect2Text {
+  .rightpage {align-items: flex-end;}
+  .rightpageBody {
     width: 100vw;
     height: auto;
     min-height: unset;
     background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
   }
-  .sect2Title {
+  .rightpageHeaders {
     font-size: 5vw;
     padding: 1em 0 0 1.75em;
   }
-  .sect2Para {
+  .rightpagePara {
     font-size: 80%;
     padding: 0 7%;
   }
@@ -568,13 +571,7 @@ a:-webkit-any-link {
   .footerText {
     font-size: 2vw;
   }
-  .pagePara {
-    font-size: 85%;
-  }
-  /* .calendar {
-    width: 90vw;
-    height: 80vw;
-  } */
+ 
 }
 
 /* --------------------- media queries: 950px --------------------------*/
