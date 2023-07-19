@@ -1,3 +1,10 @@
+
+// --------------- VARIABLES ------------------
+
+navbarShift = "-80px";
+
+
+// --------------- FUNCTIONS ------------------
 function dropdown() {
     var x = document.getElementById("NavbarPages");
     if (x.className === "navbarPages") {
@@ -7,9 +14,6 @@ function dropdown() {
     }
 
   }
-
-
-navbarShift = "-80px";
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -31,6 +35,18 @@ function reveal() {
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     }
+  }
+}
+
+function scroll2Id(number){
+  console.log(number);
+  switch(number){
+    case 0: // section 1 homepage
+      document.getElementById("section1").scrollIntoView();
+      break;
+
+    default:
+      document.scrollIntoView(false);
   }
 }
 
