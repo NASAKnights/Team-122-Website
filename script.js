@@ -15,9 +15,9 @@ function dropdown() {
 
   }
 
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.scrollY;
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset; //somehow this redundancy is necessary
+  var currentScrollPos = window.scrollY; //somehow this redundancy is necessary
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("NavContainer").style.top = "0";
   } else {
