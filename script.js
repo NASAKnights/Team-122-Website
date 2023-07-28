@@ -1,3 +1,10 @@
+
+// --------------- VARIABLES ------------------
+
+navbarShift = "-80px";
+
+
+// --------------- FUNCTIONS ------------------
 function dropdown() {
     var x = document.getElementById("NavbarPages");
     if (x.className === "navbarPages") {
@@ -8,12 +15,9 @@ function dropdown() {
 
   }
 
-
-navbarShift = "-80px";
-
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.scrollY;
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset; //somehow this redundancy is necessary
+  var currentScrollPos = window.scrollY; //somehow this redundancy is necessary
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("NavContainer").style.top = "0";
   } else {
@@ -34,11 +38,26 @@ function reveal() {
   }
 }
 
+function scroll2Id(number){
+  console.log(number);
+  switch(number){
+    case 0: // section 1 homepage
+      document.getElementById("section1").scrollIntoView();
+      break;
+
+    default:
+      document.scrollIntoView(false);
+  }
+}
+
 function scrollSect1() {
-  document.getElementById("sect1").scrollIntoView();
+  document.getElementById("section1").scrollIntoView();
 }
 function scrollSect2() {
-  document.getElementById("sect2").scrollIntoView();
+  document.getElementById("section2").scrollIntoView();
+}
+function scrollCalendar(){
+  document.getElementById("calendar").scrollIntoView();
 }
 function scrollSect3() {
   document.getElementById("contact").scrollIntoView();

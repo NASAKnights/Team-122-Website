@@ -228,88 +228,9 @@ a:-webkit-any-link {
   color: rgba(0, 0, 0, 0.8);
 }
 
-
-/* First section below banner */
-.sect1 {
-  background: url(images/news.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  box-shadow: inset 0px 5px 12px 0px rgba(0, 0, 0, 0.56);
-}
-
-/* Section 1's container for text */
-.sect1Text {
-  background-image: linear-gradient(var(--lightblue)0.75%, var(--mediumnavy)0.75%);
-  width: 100vw;
-  height: auto;
-  min-height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: conter; 
-  gap: 2.5vw;
-  box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
-}
-
-/* Section 1's Title */
-.sect1Title {
-  font-family: 'Bruno Ace';
-  font-size: 130%;
-  font-weight: bolder;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 1.5em 0 0 1.75em;
-  margin: 0;
-}
-
-/* Section one's paragraphs */
-.sect1Para {
-  font-family: 'Comme';
-  font-size: 100%;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 0 4em;
-  margin: 0;
-  width: 80vw;
-}
-
-.sect1Down {
-  transition: .3s;
-  color: rgba(255, 255, 255, 0.882);
-  font-size: 200%;
-  text-shadow: 0px 7px 15px black;
-  position: absolute;
-  bottom: 20%;
-  right: 50%;
-  left: 50%;
-}
-
-.sect1Down:hover {
-  font-size: 220%;
-  text-shadow: 0px 18px 15px black;
-  right: 49.7%;
-  left: 49.7%;
-}
-
-.sect1Spacer {
-  padding: 5%;
-}
-
-/* Second section below banner */
-.sect2 {
-  background: url(images/compstrat.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+/* ------------------------ Page - (content on the right side) ---------------------------*/
+.rightpage {
+  /* add Backgrounds to each page as needed*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -317,10 +238,9 @@ a:-webkit-any-link {
   box-shadow: inset 0px 8px 12px 0px rgba(0, 0, 0, .56);
 }
 
-/* Section 2's container for text */
-.sect2Text {
+.rightpageBody {
   background-image: linear-gradient(to right, var(--lightblue)0.75%, var(--mediumnavy)0.75%);
-  width: 40vw;
+  width: 30vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -330,8 +250,7 @@ a:-webkit-any-link {
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
 }
 
-/* Section 2's Title */
-.sect2Title {
+.rightpageHeaders {
   font-family: 'Bruno Ace';
   font-size: 130%;
   font-weight: bolder;
@@ -340,8 +259,7 @@ a:-webkit-any-link {
   margin: 0;
 }
 
-/* Section 2's paragraphs */
-.sect2Para {
+.rightpagePara {
   font-family: 'Comme';
   font-size: 100%;
   color: rgba(255, 255, 255, 0.8);
@@ -349,38 +267,22 @@ a:-webkit-any-link {
   margin: 0;
 }
 
-.sect2Down {
+.rightpageDown {
   transition: .3s;
   color: rgba(255, 255, 255, 0.882);
   font-size: 200%;
   text-shadow: 0px 7px 15px black;
   position: absolute;
   bottom: 20%;
-  right: 50%;
-  left: 50%;
+  right: 20%;
 }
 
-.sect2Down:hover {
+.rightpageDown:hover {
   font-size: 220%;
   text-shadow: 0px 18px 15px black;
 }
 
-.calCont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  background-color: var(--mediumnavy);
-}
-
-.calendar {
-  width: 70vw;
-  height: 80vh;
-  padding: 2% 0 2% 0;
-}
-
-/* contact section */
+/* ------------------ Contact ---------------------------------------------*/
 .contact {
   background: var(--darknavy);
   display: flex;
@@ -466,24 +368,17 @@ a:-webkit-any-link {
 
 /* First section below banner */
 .page {
-  background: url(images/news.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-  height: fit-content;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   box-shadow: inset 0px 5px 12px 0px rgba(0, 0, 0, 0.56);
 }
 
 /* Section 1's container for text */
 .pageBody {
   background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
-  width: 100vw;
+  width: 100vw; /* 100vw*/
   height: auto;
   display: flex;
   flex-direction: column;
@@ -491,7 +386,6 @@ a:-webkit-any-link {
   justify-content: flex-start; 
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
   padding: 3% 0 0 0;
-  
 }
 
 /* Section 1's Headers */
@@ -534,9 +428,24 @@ a:-webkit-any-link {
   text-indent: 1em;
 }
 
-.pageImage {
-  width: 80vw;
-  margin: 5vh auto;
+.pageDown {
+  transition: .3s;
+  color: rgba(255, 255, 255, 0.882);
+  font-size: 200%;
+  text-shadow: 0px 7px 15px black;
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+  left: 50%;
+}
+
+.pageDown:hover {
+  font-size: 220%;
+  text-shadow: 0px 18px 15px black;
+}
+
+.pageSpacer {
+  padding: 5%;
 }
 
 /* ----------------------------- Team -----------------------------*/
@@ -586,6 +495,42 @@ a:-webkit-any-link {
   margin: 0;
 }
 
+/* --------------------- Background Images -----------------------------*/
+
+.imagesHomepageSectionOne {
+  background: url(images/news.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 0vw -25vh;
+}
+
+.imagesHomepageSectionTwo {
+  background: url(images/2023-team-portsmouth.png) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: -11vw -20vh;
+}
+
+.imagesHomepageSectionThree {
+  background: url(images/compstrat.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.defaultBackground {
+  background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
+  height: fit-content;
+  width: auto;
+}
+
 /* --------------------- media queries: 900px --------------------------*/
 
 /* when screen is smaller than 900px */
@@ -598,31 +543,31 @@ a:-webkit-any-link {
     background-attachment: fixed;
     background-size: cover;
   }
-  .sect1Text {
+  .pageHeaders {
     background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
     min-height: unset;
   }
-  .sect1Title {
+  .pageHeaders {
     font-size: 5vw;
     padding: 1em 0 0 1.75em;
   }
-  .sect1Para {
+  .pagePara {
     font-size: 80%;
     padding: 0 7% 0 7%;
     width: auto;
   }
-  .sect2 {align-items: flex-end;}
-  .sect2Text {
+  .rightpage {align-items: flex-end;}
+  .rightpageBody {
     width: 100vw;
     height: auto;
     min-height: unset;
     background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
   }
-  .sect2Title {
+  .rightpageHeaders {
     font-size: 5vw;
     padding: 1em 0 0 1.75em;
   }
-  .sect2Para {
+  .rightpagePara {
     font-size: 80%;
     padding: 0 7%;
   }
@@ -641,13 +586,7 @@ a:-webkit-any-link {
   .footerText {
     font-size: 2vw;
   }
-  .pagePara {
-    font-size: 85%;
-  }
-  .calendar {
-    width: 90vw;
-    height: 80vw;
-  }
+ 
 }
 
 /* --------------------- media queries: 950px --------------------------*/

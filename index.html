@@ -31,9 +31,11 @@
 
   <body>
     <div id="navplace">
-      <script>$(function(){
-        $("#navplace").load("./templates/navbarIndex.txt");
-      });</script>
+      <script>
+      $(function() {
+        $('#navplace').load("./templates/navbarIndex.html");
+      });
+      </script>
     </div>
 
     <div class="banner">
@@ -44,46 +46,63 @@
         
     </div>
 
-    <div class="sect1" id="sect1">
-      <div class="sect1Text reveal fadeUp">
-        <h1 class="sect1Title"></h1>
-        <p class="sect1Para">
-          Each year for the FIRST Robotics Competition, we are met with a new game that requires us to design and build a robot. We evaluate the game and look at strategies that could help us win competitions with our alliance. We look at the rules, scoring, and penalties and decide what kind of robot would be best. We work with our drive team to ensure the controls are intuitive and work well. At our competitions, we strategize with our alliance members to score as high as possible.
+    <div class="imagesHomepageSectionOne page reveal fadeUp" id="section1">
+      <div class="pageBody">
+        <h1 class="pageHeaders">What is the FIRST Robotics Competition?</h1>
+        <p class="pagePara">
+          The FIRST Robotics Competition is a national high-school level event held every year, where teams of
+          students come together to compete with their custom built robots in a unique game, which
+          is different for each season. Teams are competing with and against each other, showing off
+          technical skills used in the field of robotics, including but not limited to, mecahnical design,
+          electrical engineering, programming, graphic design, social marketing and strategy.
         </p>
-        <span class="sect1Down">
+        
+        <span class="pageDown">
           <a onclick="scrollSect2()" class="fa fa-caret-down"> </a>
         </span>
-        <span class="sect1Spacer"></span>
+        <span class="pageSpacer"></span>
 
       </div>
     </div>
 
-    <div class="sect2" id="sect2">
-      <div class="sect2Text reveal fadeLeft"> 
-        <h1 class="sect2Title">Mechanical Design</h1>
-        <p class="sect2Para">
-          After we learn the rules of the game and possible strategies we can employ, we begin our design process. We start by looking at any robot constraints we have and then brainstorm ideas for different mechanisms on the robot. We then narrow our choices and test concepts we are interested in. As we do this, we evaluate product architecture and industrial design by building for modularity and with our drive team in mind. Then we prototype our ideas and improve upon them.
+    <div class="imagesHomepageSectionTwo rightpage reveal fadeLeft" id="section2">
+      <div class="rightpageBody"> 
+        <h1 class="rightpageHeaders">Who are We?</h1>
+        <p class="rightpagePara">
+          We are The NASA Knights, FRC team 122, a community-based robotics team in the Hampton Roads area in Viriginia.
+          The team operates out of the New Horizons Regional Educational Center in Newport News. The school houses
+          our team's shop and robots both in and out of season. 
+          <br><br>
+          The team was founded in 1997 by NASA Langley Research Center, starting in a small shop closet before moving to our
+          current location.
+          <br><br>
+          Students on the team are a mix of public, private and home-schooled, coming in 
+          with a variety of skills and knowledge. 
         </p>
-        <span class="sect2Down">
-          <a onclick="scrollSect3()" class="fa fa-caret-down"> </a>
+        <span class="rightpageDown">
+          <a onclick="scrollCalendar()" class="fa fa-caret-down"> </a>
         </span>
-        <span class="sect1Spacer"></span>
+        <span class="pageSpacer"></span>
       </div>
     </div>
 
-    <div class="calCont">
-      <h1 class="calTitle">Team Events</h1>
-      <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23005fb3&ctz=America%2FNew_York&showTitle=0&showDate=1&showPrint=0&showTabs=0&showCalendars=0&title&src=ZnJjbmFzYWtuaWdodHMxMjJAZ21haWwuY29t&color=%23616161" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+    <div class="defaultBackground page reveal fadeUp" id="calendar">
+      <h1 class="pageHeaders">Team Calendar</h1>
+      <h1 class="pageSubheaders">General Meetings and Outreach Events</h1>
+      <br>
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=MONTH&showTitle=0&showTabs=0&showPrint=0&src=ZnJjbmFzYWtuaWdodHMxMjJAZ21haWwuY29t&color=%23616161" 
+            style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
+
 
     <div id="contactplace">
       <script>$(function(){
-        $("#contactplace").load("./templates/contact.txt");
+        $("#contactplace").load("./templates/contact.html");
       });</script>
     </div>
     <div id="footerplace">
       <script>$(function(){
-        $("#footerplace").load("./templates/footer.txt");
+        $("#footerplace").load("./templates/footer.html");
       });</script>
     </div>
 
