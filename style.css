@@ -240,7 +240,7 @@ a:-webkit-any-link {
 
 .rightpageBody {
   background-image: linear-gradient(to right, var(--lightblue)0.75%, var(--mediumnavy)0.75%);
-  width: 40vw;
+  width: 30vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -378,7 +378,7 @@ a:-webkit-any-link {
 /* Section 1's container for text */
 .pageBody {
   background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
-  width: 100vw;
+  width: 100vw; /* 100vw*/
   height: auto;
   display: flex;
   flex-direction: column;
@@ -496,24 +496,33 @@ a:-webkit-any-link {
 }
 
 /* --------------------- Background Images -----------------------------*/
-.imagesHomepageSectionTwo {
-  background: url(images/compstrat.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-}
 
 .imagesHomepageSectionOne {
-  background: url(images/news.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
+  background: url(images/news.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height: 150vh;
-  width: 100vw;
+  height: 100vh;
+  background-position: 0vw -25vh;
+}
+
+.imagesHomepageSectionTwo {
+  background: url(images/2023-team-portsmouth.png) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: -11vw -20vh;
+}
+
+.imagesHomepageSectionThree {
+  background: url(images/compstrat.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .defaultBackground {

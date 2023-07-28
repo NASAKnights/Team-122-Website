@@ -56,12 +56,7 @@
           technical skills used in the field of robotics, including but not limited to, mecahnical design,
           electrical engineering, programming, graphic design, social marketing and strategy.
         </p>
-        <h1 class="pageHeaders">Who are We?</h1>
-        <p class="pagePara">
-          We are The NASA Knights, FRC team 122, a community-based robotics team in the Hampton Roads area in Viriginia.
-          The team operates out of the New Horizons Regional Educational Center in Newport News. The school houses
-          our team's shop and robots both in and out of season. 
-        </p>
+        
         <span class="pageDown">
           <a onclick="scrollSect2()" class="fa fa-caret-down"> </a>
         </span>
@@ -72,23 +67,26 @@
 
     <div class="imagesHomepageSectionTwo rightpage reveal fadeLeft" id="section2">
       <div class="rightpageBody"> 
-        <h1 class="rightpageHeaders">Mechanical Design</h1>
+        <h1 class="rightpageHeaders">Who are We?</h1>
         <p class="rightpagePara">
-          After we learn the rules of the game and possible strategies we can employ, 
-          we begin our design process. We start by looking at any robot constraints 
-          we have and then brainstorm ideas for different mechanisms on the robot. 
-          We then narrow our choices and test concepts we are interested in. As we do 
-          this, we evaluate product architecture and industrial design by building for 
-          modularity and with our drive team in mind. Then we prototype our ideas and improve upon them.
+          We are The NASA Knights, FRC team 122, a community-based robotics team in the Hampton Roads area in Viriginia.
+          The team operates out of the New Horizons Regional Educational Center in Newport News. The school houses
+          our team's shop and robots both in and out of season. 
+          <br><br>
+          The team was founded in 1997 by NASA Langley Research Center, starting in a small shop closet before moving to our
+          current location.
+          <br><br>
+          Students on the team are a mix of public, private and home-schooled, coming in 
+          with a variety of skills and knowledge. 
         </p>
         <span class="rightpageDown">
-          <a onclick="scrollSect3()" class="fa fa-caret-down"> </a>
+          <a onclick="scrollCalendar()" class="fa fa-caret-down"> </a>
         </span>
         <span class="pageSpacer"></span>
       </div>
     </div>
 
-    <div class="defaultBackground page reveal fadeUp">
+    <div class="defaultBackground page reveal fadeUp" id="calendar">
       <h1 class="pageHeaders">Team Calendar</h1>
       <h1 class="pageSubheaders">General Meetings and Outreach Events</h1>
       <br>
@@ -99,7 +97,7 @@
 
     <div id="contactplace">
       <script>$(function(){
-        $("#contactplace").load("./templates/contact.txt");
+        $("#contactplace").load("./templates/contact.html");
       });</script>
     </div>
     <div id="footerplace">
