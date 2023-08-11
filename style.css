@@ -243,8 +243,24 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2vw;
-  
+  gap: 2vw; 
+}
+
+.bannerTeamBackground {
+  background: url(images/stands.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 75vh;
+  width: fill;
+  background-position: 0vw -25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw; 
 }
 
 /* ------------------------ Page - (content on the right side) ---------------------------*/
