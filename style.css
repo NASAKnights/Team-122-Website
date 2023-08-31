@@ -326,10 +326,11 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: flex-start;
   box-shadow: inset 0px 8px 12px 0px rgba(0, 0, 0, .56);
+  
 }
 
 .leftpageBody {
-  background-image: linear-gradient(to right, var(--lightblue)0.75%, var(--mediumnavy)0.75%);
+  background-image: linear-gradient(to left, var(--lightblue)0.75%, var(--mediumnavy)0.75%);
   width: 30vw;
   height: 100%;
   display: flex;
@@ -607,6 +608,76 @@ a:-webkit-any-link {
   background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
   height: fit-content;
   width: auto;
+}
+
+.imagesTeamMechanicalSection {
+  background: url(images/mechanical.JPEG) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 30vw -40vh;
+}
+
+.imagesTeamElectricalSection {
+  background: url(images/electrical.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: -10vw 0vh;
+}
+
+.imagesTeamProgramSection {
+  background: url(images/program.gif) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 0vw 0vh;
+}
+
+.imagesTeamMediaSection {
+  background: url(images/media.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: -20vw -10vh;
+}
+
+.imagesTeamDriveSection {
+  background: url(images/drive.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 20vw -20vh;
+}
+
+.imagesTeamPitSection {
+  background: url(images/pit.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: -24vw -60vh;
+}
+.imagesTeamScoutSection {
+  background: url(images/scouting.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 12vw -25vh;
+
 }
 
 /* --------------------- media queries: 900px --------------------------*/
