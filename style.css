@@ -172,7 +172,7 @@ a:-webkit-any-link {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,8 +243,24 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2vw;
-  
+  gap: 2vw; 
+}
+
+.bannerTeamBackground {
+  background: url(images/stands.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 75vh;
+  width: fill;
+  background-position: 0vw -25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw; 
 }
 
 /* ------------------------ Page - (content on the right side) ---------------------------*/
@@ -301,6 +317,48 @@ a:-webkit-any-link {
   text-shadow: 0px 18px 15px black;
 }
 
+/* -------------- Page (Content on the left side) -------------------------*/
+
+.leftpage {
+  /* add Backgrounds to each page as needed*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: inset 0px 8px 12px 0px rgba(0, 0, 0, .56);
+  
+}
+
+.leftpageBody {
+  background-image: linear-gradient(to left, var(--lightblue)0.75%, var(--mediumnavy)0.75%);
+  width: 30vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2.5vw;
+  box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
+}
+
+.leftpageHeaders {
+  font-family: 'Bruno Ace';
+  font-size: 130%;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2.5em 0 0 1.75em;
+  margin: 0;
+}
+
+.leftpagePara {
+  font-family: 'Comme';
+  font-size: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 3vw;
+  margin: 0;
+}
+
+
 /* ------------------ Contact ---------------------------------------------*/
 .contact {
   background: var(--darknavy);
@@ -310,7 +368,7 @@ a:-webkit-any-link {
   box-shadow: -3px -7px 14px 0px rgb(0 0 0 / 56%);
   justify-content: space-evenly;
   color: rgba(255, 255, 255, .5);
-  width: 100vw;
+  width: 100%;
 }
 
 /* 3 containers for contact content */
@@ -399,7 +457,7 @@ a:-webkit-any-link {
 /* Section 1's container for text */
 .pageBody {
   background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
-  width: 100vw; /* 100vw*/
+  width: 100%; /* 100vw*/
   height: auto;
   display: flex;
   flex-direction: column;
@@ -492,7 +550,7 @@ a:-webkit-any-link {
   justify-content: center;
   height: 25vh;
   gap: 20px;
-  width: 100vw
+  width: 100%;
 }
 
 /* footer social media icon container */
@@ -550,6 +608,76 @@ a:-webkit-any-link {
   background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
   height: fit-content;
   width: auto;
+}
+
+.imagesTeamMechanicalSection {
+  background: url(images/mechanical.JPEG) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 30vw -40vh;
+}
+
+.imagesTeamElectricalSection {
+  background: url(images/electrical.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: -10vw 0vh;
+}
+
+.imagesTeamProgramSection {
+  background: url(images/program.gif) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 0vw 0vh;
+}
+
+.imagesTeamMediaSection {
+  background: url(images/media.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: -20vw -10vh;
+}
+
+.imagesTeamDriveSection {
+  background: url(images/drive.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 20vw -20vh;
+}
+
+.imagesTeamPitSection {
+  background: url(images/pit.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: -24vw -60vh;
+}
+.imagesTeamScoutSection {
+  background: url(images/scouting.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 12vw -25vh;
+
 }
 
 /* --------------------- media queries: 900px --------------------------*/
