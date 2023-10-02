@@ -574,6 +574,28 @@ a:-webkit-any-link {
   margin: 0;
 }
 
+/* --------------------- Carousel --------------------------------------*/
+
+.carouselOverlay{
+
+}
+
+.robotCarousel{
+
+}
+
+.carousel-inner{
+
+}
+
+.robotSummary{
+
+}
+
+.robotSummaryImg{
+  
+}
+
 /* --------------------- Background Images -----------------------------*/
 
 .imagesHomepageSectionOne {
