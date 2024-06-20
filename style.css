@@ -585,15 +585,24 @@ a:-webkit-any-link {
 }
 
 .carousel-inner{
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  margin: auto;
 }
 
 .robotSummary{
-
+  display: none;
 }
 
 .robotSummaryImg{
   
+}
+
+.active {
+  background-color: #717171;
 }
 
 /* --------------------- Background Images -----------------------------*/
