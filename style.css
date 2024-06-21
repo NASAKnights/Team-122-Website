@@ -574,36 +574,6 @@ a:-webkit-any-link {
   margin: 0;
 }
 
-/* --------------------- Carousel --------------------------------------*/
-
-.carouselOverlay{
-
-}
-
-.robotCarousel{
-
-}
-
-.carousel-inner{
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  margin: auto;
-}
-
-.robotSummary{
-  display: none;
-}
-
-.robotSummaryImg{
-  
-}
-
-.active {
-  background-color: #717171;
-}
 
 /* --------------------- Background Images -----------------------------*/
 
@@ -709,6 +679,17 @@ a:-webkit-any-link {
   height: 100vh;
   background-position: 12vw -25vh;
 
+}
+
+.imagesRobot2024 {
+  background: url(images/robotProfileImages/robot2024.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  height: 100vh;
+  background-position: 30vw 0vh;
+  
 }
 
 /* --------------------- media queries: 900px --------------------------*/
