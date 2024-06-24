@@ -692,6 +692,26 @@ a:-webkit-any-link {
   
 }
 
+.imagesRobot2023 {
+  background: url(images/robotProfileImages/robot2023.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  height: 100vh;
+  background-position: 15vw 0vh;
+}
+
+.imagesRobot2022 {
+  background: url(images/robotProfileImages/robot2022.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  height: 100vh;
+  background-position: 50vw 0vh;
+}
+
 /* --------------------- media queries: 900px --------------------------*/
 
 /* when screen is smaller than 900px */
