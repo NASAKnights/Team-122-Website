@@ -166,7 +166,8 @@ a:-webkit-any-link {
 
 /* Top section of Index */
 .banner {
-  background: url(images/banner.JPG);
+  /* background: url(images/banner.JPG); */
+  background: url(images/banner2024.JPG);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
@@ -578,23 +579,25 @@ a:-webkit-any-link {
 /* --------------------- Background Images -----------------------------*/
 
 .imagesHomepageSectionOne {
-  background: url(images/news.jpg) no-repeat top center fixed; 
+  /* background: url(images/news.jpg) no-repeat top center fixed;  */
+  background: url(images/team1.JPG) no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: 0vw -25vh;
+  background-position: 0vw 0vh;
 }
 
 .imagesHomepageSectionTwo {
-  background: url(images/2023-team-portsmouth.png) no-repeat top center fixed; 
+  /* background: url(images/2023-team-portsmouth.png) no-repeat top center fixed;  */
+  background: url(images/2024-team-portsmouth.JPG) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: -11vw -20vh;
+  background-position: -11vw -0vh;
 }
 
 .imagesHomepageSectionThree {
