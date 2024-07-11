@@ -2,7 +2,7 @@
 // --------------- VARIABLES ------------------
 
 navbarShift = "-80px";
-
+let slideIndex = 0;
 
 // --------------- FUNCTIONS ------------------
 function dropdown() {
@@ -64,6 +64,10 @@ function scrollSect3() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+//---------------------------
+
 
 //Run these on page load
 reveal();
