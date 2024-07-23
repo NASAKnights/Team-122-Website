@@ -7,7 +7,13 @@
       <span id="NavbarPages" class="navbarPages">
         <a class="navbarSpacer"> X </a>
         <a href="./pages/about.html">About</a>
-        <a href="./pages/team.html">Team</a>
+        <div class="dropdown">
+          <button class="dropbtn">Team</button>
+            <div class="dropdown-content">
+              <a href="./pages/team.html">Students</a>
+              <a href="./pages/team-mentors.html">Mentors</a>
+            </div>
+          </div>
         <a href="./pages/robot.html">Our Robots</a>
         <a href="./pages/media.html">Media</a>
         <a href="./pages/resources.html">Resources</a>
