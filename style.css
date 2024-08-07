@@ -562,6 +562,14 @@ a:-webkit-any-link {
   text-indent: 1em;
 }
 
+.pagePara3 {
+  font-family: 'Comme';
+  font-size: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 4em;
+  margin: 1em 0em 1em 2em;
+}
+
 .pageDown {
   transition: .3s;
   color: rgba(255, 255, 255, 0.882);
