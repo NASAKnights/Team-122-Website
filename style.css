@@ -637,6 +637,11 @@ a:-webkit-any-link {
   margin: 0;
 }
 
+.calendarStyle {
+  width: 75vw;
+  height: 90vh; 
+}
+
 
 /* --------------------- Background Images -----------------------------*/
 
@@ -817,6 +822,22 @@ a:-webkit-any-link {
     font-size: 80%;
     padding: 0 7%;
   }
+  .leftpage {align-items: flex-end;}
+  .leftpageBody {
+    width: 100vw;
+    height: auto;
+    min-height: unset;
+    background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
+  }
+  .leftpageHeaders {
+    font-size: 5vw;
+    padding: 1em 0 0 1.75em;
+  }
+  .leftpagePara {
+    font-size: 80%;
+    padding: 0 7%;
+  }
+
   .contactSpan {width: 40vw;}
   .contactTitles {font-size: 3.5vw;}
   .contactIcon {font-size: 15vw;}
@@ -832,6 +853,16 @@ a:-webkit-any-link {
   .footerText {
     font-size: 2vw;
   }
+
+/* --------------Images adjustment for mobile--------------------- */
+
+  .imagesTeamDriveSection {background-position: 0vw 0vh;}
+  .imagesTeamElectricalSection {background-position: 0vw 0vh;}
+  .imagesTeamMechanicalSection {background-position: 0vw 0vh;}
+  .imagesTeamMediaSection {background-position: 0vw 0vh;}
+  .imagesTeamPitSection {background-position: 0vw 0vh;}
+  .imagesTeamProgramSection {background-position: 0vw 0vh;}
+  .imagesTeamScoutSection {background-position: 0vw 0vh;}
  
 }
 
@@ -856,9 +887,21 @@ a:-webkit-any-link {
       display: none;
       padding: 30px 16px;
     }
+    .navbarPages .dropdown .dropbtn {
+      display: none;
+      /* padding: 30px 16px; */
+    }
     .navbarPages a.dropdownIcon {
       float: right;
       display: block;
+    }
+
+    .navbarPages.responsive .dropdown {float: none;}
+    .navbarPages.responsive .dropdown-content {position: relative;}
+    .navbarPages.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: right;
     }
 
     .navbar {background-image: linear-gradient(rgba(5, 20, 57, 1) 98%, transparent);}
