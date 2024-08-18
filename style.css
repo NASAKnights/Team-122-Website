@@ -148,15 +148,23 @@ a:-webkit-any-link {
   /* Navbar links on hover except the spacer */
   .navbarPages a:hover:not(.navbarSpacer) {
     font-weight: bolder;
-    transition: 0.25s
+    transition: 0.25s;
   }
     
   /* Navbar highlight active page */
   .navbarPages a.active {
     font-weight: bolder;
   }
+
+  /* .navbarPages a::before {
+    display: block; 
+    height: 0;
+    font-weight: bolder;
+    overflow: hidden;
+    content: attr(navBarText);
+    visibility: hidden;
+  } */
   
-    
   /* Navbar hide links for small windows */
   .navbarPages .dropdownIcon {
     display: none;
@@ -164,7 +172,7 @@ a:-webkit-any-link {
 
   .navbarPages a:hover, .dropdown:hover .dropbtn {
     font-weight: bolder;
-    transition: 0.25s
+    transition: 0.25s;
   }
 
   /* The container <div> - needed to position the dropdown content */
@@ -522,6 +530,15 @@ a:-webkit-any-link {
   padding: 3% 0 0 0;
 }
 
+.pageBody2 {
+  background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
+  width: 100%; /* 100vw*/
+  height: auto;
+  
+  box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
+  padding: 3% 0 0 0;
+}
+
 /* Section 1's Headers */
 .pageHeaders {
   font-family: 'Bruno Ace';
@@ -594,6 +611,55 @@ a:-webkit-any-link {
 
 
 /* ---------------------------- Sponsors -----------------------------*/
+
+.sponsorsResponsiveBig {
+  background-color: var(--mediumnavy);  
+  padding: 0 6px;
+  float: left;
+  display: table;
+  width: 49%;
+}
+
+.sponsorsResponsiveMed {
+  background-color: var(--mediumnavy);  
+  padding: 0 3px;
+  float: left;
+  display: table;
+  width: 24%;
+}
+
+.sponsorsResponsiveSmall {
+  background-color: var(--mediumnavy);  
+  padding: 0 1px;
+  float: left;
+  display: table;
+  width: 12%;
+}
+
+div.sponsorGallery {
+  border: 1px solid transparent;
+  display: block;
+}
+
+div.sponsorGallery:hover {
+  border: 1px solid #ccc;
+}
+
+div.sponsorGallery img{
+  object-fit: scale-down;
+  aspect-ratio: 2;
+  width: 100%;
+  height: 100%;
+}
+
+
+div.sponsorGalleryDesc {
+  /* font-family: 'Comme'; */
+  font-family: 'Bruno Ace';
+  color: rgba(255, 255, 255, 0.882);
+  padding: 15px;
+  text-align: center;
+}
 
 
 /* ---------------------------- Tutorials -----------------------------*/
