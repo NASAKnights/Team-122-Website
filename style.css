@@ -80,7 +80,7 @@ a:-webkit-any-link {
 /* ------------------------------ Navbar -----------------------------*/
   /* Navbar container */
   .navbar {
-    overflow: hidden;
+    overflow: visible;
     position: fixed;
     width: 100%;
     transition: .35s;
@@ -134,7 +134,7 @@ a:-webkit-any-link {
   }
 
   /* Navbar links */
-  .navbarPages a {
+  .navbarPages a{
     float: left;
     display: block; 
     font-family: 'Bruno Ace';
@@ -148,19 +148,81 @@ a:-webkit-any-link {
   /* Navbar links on hover except the spacer */
   .navbarPages a:hover:not(.navbarSpacer) {
     font-weight: bolder;
-    transition: 0.25s
+    transition: 0.25s;
   }
     
   /* Navbar highlight active page */
   .navbarPages a.active {
     font-weight: bolder;
   }
+
+  /* .navbarPages a::before {
+    display: block; 
+    height: 0;
+    font-weight: bolder;
+    overflow: hidden;
+    content: attr(navBarText);
+    visibility: hidden;
+  } */
   
-    
   /* Navbar hide links for small windows */
   .navbarPages .dropdownIcon {
     display: none;
   }
+
+  .navbarPages a:hover, .dropdown:hover .dropbtn {
+    font-weight: bolder;
+    transition: 0.25s;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn{
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 22px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    background-color: inherit;
+    font-family: 'Bruno Ace';
+    margin: 0;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #2e3453;} 
+
 
 /* ------------------------------ Index -----------------------------*/
 
@@ -468,6 +530,15 @@ a:-webkit-any-link {
   padding: 3% 0 0 0;
 }
 
+.pageBody2 {
+  background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
+  width: 100%; /* 100vw*/
+  height: auto;
+  
+  box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
+  padding: 3% 0 0 0;
+}
+
 /* Section 1's Headers */
 .pageHeaders {
   font-family: 'Bruno Ace';
@@ -508,6 +579,14 @@ a:-webkit-any-link {
   text-indent: 1em;
 }
 
+.pagePara3 {
+  font-family: 'Comme';
+  font-size: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 4em;
+  margin: 1em 0em 1em 2em;
+}
+
 .pageDown {
   transition: .3s;
   color: rgba(255, 255, 255, 0.882);
@@ -532,6 +611,58 @@ a:-webkit-any-link {
 
 
 /* ---------------------------- Sponsors -----------------------------*/
+
+.sponsorsResponsiveBig {
+  background-color: var(--mediumnavy);  
+  padding: 0 6px;
+  float: left;
+  display: table;
+  width: 49%;
+  
+}
+
+.sponsorsResponsiveMed {
+  background-color: var(--mediumnavy);  
+  padding: 0 3px;
+  float: left;
+  display: table;
+  width: 24%;
+}
+
+.sponsorsResponsiveSmall {
+  background-color: var(--mediumnavy);  
+  padding: 0 1px;
+  float: left;
+  display: table;
+  width: 12%;
+}   
+
+div.sponsorGallery {
+  border: 1px solid transparent;
+  display: block;
+}
+
+div.sponsorGallery:hover {
+  border: 1px solid #ccc;
+}
+
+div.sponsorGallery img{
+  object-fit: contain;
+  aspect-ratio: 2;
+  width: 100%;
+  height: auto;
+}
+
+
+div.sponsorGalleryDesc {
+  font-family: 'Bruno Ace';
+  color: rgba(255, 255, 255, 0.882);
+  padding: 10px 0px;
+  width: 100%;
+  height: 7vh;
+  text-align: center;
+  text-justify: auto;
+}
 
 
 /* ---------------------------- Tutorials -----------------------------*/
@@ -573,6 +704,11 @@ a:-webkit-any-link {
   font-size: 1vw;
   color: rgba(255, 255, 255, .5);
   margin: 0;
+}
+
+.calendarStyle {
+  width: 75vw;
+  height: 90vh; 
 }
 
 
@@ -755,6 +891,22 @@ a:-webkit-any-link {
     font-size: 80%;
     padding: 0 7%;
   }
+  .leftpage {align-items: flex-end;}
+  .leftpageBody {
+    width: 100vw;
+    height: auto;
+    min-height: unset;
+    background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
+  }
+  .leftpageHeaders {
+    font-size: 5vw;
+    padding: 1em 0 0 1.75em;
+  }
+  .leftpagePara {
+    font-size: 80%;
+    padding: 0 7%;
+  }
+
   .contactSpan {width: 40vw;}
   .contactTitles {font-size: 3.5vw;}
   .contactIcon {font-size: 15vw;}
@@ -770,6 +922,16 @@ a:-webkit-any-link {
   .footerText {
     font-size: 2vw;
   }
+
+/* --------------Images adjustment for mobile--------------------- */
+
+  .imagesTeamDriveSection {background-position: 0vw 0vh;}
+  .imagesTeamElectricalSection {background-position: 0vw 0vh;}
+  .imagesTeamMechanicalSection {background-position: 0vw 0vh;}
+  .imagesTeamMediaSection {background-position: 0vw 0vh;}
+  .imagesTeamPitSection {background-position: 0vw 0vh;}
+  .imagesTeamProgramSection {background-position: 0vw 0vh;}
+  .imagesTeamScoutSection {background-position: 0vw 0vh;}
  
 }
 
@@ -794,9 +956,21 @@ a:-webkit-any-link {
       display: none;
       padding: 30px 16px;
     }
+    .navbarPages .dropdown .dropbtn {
+      display: none;
+      /* padding: 30px 16px; */
+    }
     .navbarPages a.dropdownIcon {
       float: right;
       display: block;
+    }
+
+    .navbarPages.responsive .dropdown {float: none;}
+    .navbarPages.responsive .dropdown-content {position: relative;}
+    .navbarPages.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: right;
     }
 
     .navbar {background-image: linear-gradient(rgba(5, 20, 57, 1) 98%, transparent);}
