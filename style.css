@@ -612,11 +612,6 @@ a:-webkit-any-link {
 
 /* ---------------------------- Sponsors -----------------------------*/
 
-.sponsorsFlexContainer {
-  display: grid;
-  place-items: center; 
-  width: 100%;
-}
 
 
 .sponsorsResponsiveSpace{
@@ -631,7 +626,7 @@ a:-webkit-any-link {
   padding: 0 6px;
   float: left;
   display: table;
-  width: 49%;
+  width: 48.5%;
   
 }
 
