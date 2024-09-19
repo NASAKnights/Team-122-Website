@@ -77,6 +77,18 @@ a:-webkit-any-link {
   }
 }
 
+/*------------General-------------*/
+
+a:link {
+  color:#0066CC;
+  text-decoration-line: underline;
+}
+
+a:visited {
+  color: #800080;
+  text-decoration-line: underline;
+}
+
 /* ------------------------------ Navbar -----------------------------*/
   /* Navbar container */
   .navbar {
