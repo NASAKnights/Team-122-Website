@@ -4,6 +4,7 @@
         <img class="homeIcon" src="./images/icon.png">
         <a class="homeLink">122 NASA Knights</a>
       </span>
+
       <span id="NavbarPages" class="navbarPages">
         <a class="navbarSpacer"> X </a>
         <a href="./pages/about.html">About</a>
@@ -16,7 +17,13 @@
           </div>
         <a href="./pages/robot.html">Our Robots</a>
         <a href="./pages/media.html">Media</a>
-        <a href="./pages/resources.html">Resources</a>
+        <div class="dropdown">
+          <button onclick="location.href = './pages/resources.html';" class="dropbtn">Resources</button>
+            <div class="dropdown-content">
+              <a href="./pages/resources-programming.html">Programming</a>
+              <a href="./pages/resources-controlsystems.html">Control Systems</a>
+            </div>
+          </div>
         <a href="./pages/sponsors.html">Sponsors</a>
         <a href="./pages/contact.html">Contact Us</a>
         <a href="javascript:void(0);" class="dropdownIcon" onclick="dropdown()">
