@@ -155,15 +155,6 @@ a:-webkit-any-link {
   .navbarPages a.active {
     font-weight: bolder;
   }
-
-  /* .navbarPages a::before {
-    display: block; 
-    height: 0;
-    font-weight: bolder;
-    overflow: hidden;
-    content: attr(navBarText);
-    visibility: hidden;
-  } */
   
   /* Navbar hide links for small windows */
   .navbarPages .dropdownIcon {
@@ -496,6 +487,8 @@ a:-webkit-any-link {
 .pageTitle {
   
   display: flex;
+  width: 100vw;
+  max-width:100%;
 }
 
 .pageTitleText {
@@ -503,7 +496,8 @@ a:-webkit-any-link {
   font-size: 6vw;
   font-weight: bolder;
   color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 20px 0px;
+  width: 100%;
   text-shadow: 1px 7px 15px black;
   text-align: center;
 }
