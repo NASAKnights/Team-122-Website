@@ -907,6 +907,11 @@ div.sponsorGalleryDesc {
     font-size: 5vw;
     padding: 1em 0 0 1.75em;
   }
+  .pageSubheaders {
+    font-size: 4vw;
+    padding: 1em 0 0 1.75em;
+  }
+
   .pagePara {
     font-size: 80%;
     padding: 0 7% 0 7%;
