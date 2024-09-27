@@ -77,6 +77,18 @@ a:-webkit-any-link {
   }
 }
 
+/*------------General-------------*/
+
+a:link {
+  color:#0066CC;
+  text-decoration-line: underline;
+}
+
+a:visited {
+  color: #800080;
+  text-decoration-line: underline;
+}
+
 /* ------------------------------ Navbar -----------------------------*/
   /* Navbar container */
   .navbar {
@@ -300,15 +312,16 @@ a:-webkit-any-link {
   gap: 2vw; 
 }
 
+
 .bannerTeamBackground {
-  background: url(images/stands.jpg);
+  background: url(images/bannerBackground/banner-team-students.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
   height: 75vh;
   width: fill;
-  background-position: 0vw -25vh;
+  background-position: 0vw -45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -820,7 +833,7 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: 20vw -20vh;
+  background-position: 15vw -0vh;
 }
 
 .imagesTeamPitSection {
@@ -894,6 +907,11 @@ div.sponsorGalleryDesc {
     font-size: 5vw;
     padding: 1em 0 0 1.75em;
   }
+  .pageSubheaders {
+    font-size: 4vw;
+    padding: 1em 0 0 1.75em;
+  }
+
   .pagePara {
     font-size: 80%;
     padding: 0 7% 0 7%;
