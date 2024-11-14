@@ -218,13 +218,17 @@ a:visited {
   }
 
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover,a:focus,a:active {background-color: #ddd;}
 
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:focus .dropdown-content {display: block;}
+  .dropdown:active .dropdown-content {display: block;}
 
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #2e3453;} 
+  .dropdown:hover .dropbtn {background-color: #2e3453;}
+  .dropdown:focus .dropbtn {background-color: #2e3453;}
+  .dropdown:active .dropbtn {background-color: #2e3453;} 
 
 
 /* ------------------------------ Index -----------------------------*/
@@ -887,101 +891,100 @@ div.sponsorGalleryDesc {
   background-position: 50vw 0vh;
 }
 
-/* --------------------- media queries: 900px --------------------------*/
-
-/* when screen is smaller than 900px */
-@media screen and (max-width: 950px) {
-  .bannerText {font-size: 20vw;}
-  .banner {
-    background: linear-gradient(rgba(0, 16, 38, 0.5), rgba(0, 13, 30, 0.5)), url(images/banner.JPG);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  .pageHeaders {
-    background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
-    min-height: unset;
-  }
-  .pageHeaders {
-    font-size: 5vw;
-    padding: 1em 0 0 1.75em;
-  }
-  .pageSubheaders {
-    font-size: 4vw;
-    padding: 1em 0 0 1.75em;
-  }
-
-  .pagePara {
-    font-size: 80%;
-    padding: 0 7% 0 7%;
-    width: auto;
-  }
-  .rightpage {align-items: flex-end;}
-  .rightpageBody {
-    width: 100vw;
-    height: auto;
-    min-height: unset;
-    background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
-  }
-  .rightpageHeaders {
-    font-size: 5vw;
-    padding: 1em 0 0 1.75em;
-  }
-  .rightpagePara {
-    font-size: 80%;
-    padding: 0 7%;
-  }
-  .leftpage {align-items: flex-end;}
-  .leftpageBody {
-    width: 100vw;
-    height: auto;
-    min-height: unset;
-    background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
-  }
-  .leftpageHeaders {
-    font-size: 5vw;
-    padding: 1em 0 0 1.75em;
-  }
-  .leftpagePara {
-    font-size: 80%;
-    padding: 0 7%;
-  }
-
-  .contactSpan {width: 40vw;}
-  .contactTitles {font-size: 3.5vw;}
-  .contactIcon {font-size: 15vw;}
-  .contactDescr {font-size: 2.2vw;}
-  .contactButton {
-    font-size: 1.5vw;
-    padding: 1.1em 2.8em;
-  }
-  .smButtons {
-    width: 20vw;
-    font-size: 4vw;
-  }
-  .footerText {
-    font-size: 2vw;
-  }
-
-/* --------------Images adjustment for mobile--------------------- */
-
-  .imagesTeamDriveSection {background-position: 0vw 0vh;}
-  .imagesTeamElectricalSection {background-position: 0vw 0vh;}
-  .imagesTeamMechanicalSection {background-position: 0vw 0vh;}
-  .imagesTeamMediaSection {background-position: 0vw 0vh;}
-  .imagesTeamPitSection {background-position: 0vw 0vh;}
-  .imagesTeamProgramSection {background-position: 0vw 0vh;}
-  .imagesTeamScoutSection {background-position: 0vw 0vh;}
- 
-}
-
 /* --------------------- media queries: 950px --------------------------*/
 
   /* when screen is smaller than 950px */
   @media screen and (max-width: 950px) {
+
+    /* .bannerAboutBackground {
+      width: 100vw;
+    } */
+    .bannerText {font-size: 17vw;}
+    .banner {
+      background: linear-gradient(rgba(0, 16, 38, 0.5), rgba(0, 13, 30, 0.5)), url(images/banner.JPG);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .pageHeaders {
+      background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
+      min-height: unset;
+    }
+    .pageHeaders {
+      font-size: 5vw;
+      padding: 1em 0 0 1.75em;
+    }
+    .pageSubheaders {
+      font-size: 4vw;
+      padding: 1em 0 0 1.75em;
+    }
+
+    .pagePara {
+      font-size: 80%;
+      padding: 0 7% 0 7%;
+      width: auto;
+    }
+    .rightpage {align-items: flex-end;}
+    .rightpageBody {
+      width: 100vw;
+      height: auto;
+      min-height: unset;
+      background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
+    }
+    .rightpageHeaders {
+      font-size: 5vw;
+      padding: 1em 0 0 1.75em;
+    }
+    .rightpagePara {
+      font-size: 80%;
+      padding: 0 7%;
+    }
+    .leftpage {align-items: flex-end;}
+    .leftpageBody {
+      width: 100vw;
+      height: auto;
+      min-height: unset;
+      background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
+    }
+    .leftpageHeaders {
+      font-size: 5vw;
+      padding: 1em 0 0 1.75em;
+    }
+    .leftpagePara {
+      font-size: 80%;
+      padding: 0 7%;
+    }
+
+    .contactSpan {width: 40vw;}
+    .contactTitles {font-size: 3.5vw;}
+    .contactIcon {font-size: 15vw;}
+    .contactDescr {font-size: 2.2vw;}
+    .contactButton {
+      font-size: 1.5vw;
+      padding: 1.1em 2.8em;
+    }
+    .smButtons {
+      width: 20vw;
+      font-size: 4vw;
+    }
+    .footerText {
+      font-size: 2vw;
+    }
+
+  /* --------------Images adjustment for mobile--------------------- */
+
+    .imagesTeamDriveSection {background-position: 0vw 0vh;}
+    .imagesTeamElectricalSection {background-position: 0vw 0vh;}
+    .imagesTeamMechanicalSection {background-position: 0vw 0vh;}
+    .imagesTeamMediaSection {background-position: 0vw 0vh;}
+    .imagesTeamPitSection {background-position: 0vw 0vh;}
+    .imagesTeamProgramSection {background-position: 0vw 0vh;}
+    .imagesTeamScoutSection {background-position: 0vw 0vh;}
+
     .navbarPages.responsive {
-      position: relative; 
+      position: relative;
+      width: 100%;
     }
     .navbarPages.responsive a.dropdownIcon {
       position: absolute;
@@ -1017,7 +1020,7 @@ div.sponsorGalleryDesc {
     .navbar {background-image: linear-gradient(rgba(5, 20, 57, 1) 98%, transparent);}
     .homeIcon {padding: 15px 0 0 15px;}
     .homeLink {scale: 0;}
-    /*FIXME #1 show:none instead of scale*/
+    
   }
 
   /* when screen is smaller than 950px */
