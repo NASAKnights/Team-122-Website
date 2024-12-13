@@ -218,7 +218,8 @@ a:visited {
   }
 
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover,a:focus,a:active {background-color: #ddd;}
+  .dropdown-content a:hover{background-color: #ddd;}
+  .dropdown-content a:active{background-color: #ddd;}
 
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
@@ -662,7 +663,7 @@ div.sponsorGallery {
   display: block;
 }
 
-div.sponsorGallery:hover {
+div.sponsorGallery:hover, div.sponsorGallery:active{
   border: 1px solid #ccc;
 }
 
@@ -734,7 +735,7 @@ div.sponsorGalleryDesc {
   color: rgba(255, 255, 255, .7);
 }
 
-.smButtons.a:hover {
+.smButtons.a:hover, .smButtons.a:active{
   color: rgba(255, 255, 255, 0.863);
 }
 

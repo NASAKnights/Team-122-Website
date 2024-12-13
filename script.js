@@ -63,9 +63,16 @@ function scrollSect3() {
   document.getElementById("contact").scrollIntoView();
 }
 
+function displayTeamMenu() {
+  var x = document.getElementById("teamDropdown");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 window.addEventListener("scroll", reveal);
-
-
 //---------------------------
 
 
