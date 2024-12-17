@@ -65,8 +65,18 @@ function scrollSect3() {
 
 function displayTeamMenu() {
   var x = document.getElementById("teamDropdown");
-  if (x.style.display === "block") {
+  if (x.style.display == "block") {
     x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function displayResourcesMenu() {
+  var x = document.getElementById("resourcesDropdown")
+  if (x.style.display == "block"){
+    x.style.display = "none";
+    location.href = '../pages/resources.html';
   } else {
     x.style.display = "block";
   }
