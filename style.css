@@ -559,6 +559,8 @@ a:visited {
   background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
   width: 100%; /* 100vw*/
   height: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
   padding: 3% 0 0 0;
@@ -646,7 +648,51 @@ a:visited {
   height: 6px;
 }
 
-.sponsorsResponsiveBig {
+.sponsorsResponsiveLevelsGuide{
+  background-color: var(--mediumnavy);  
+  display: table;
+  color: rgba(255, 255, 255, 0.882);
+  padding: 1% 0%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  text-justify: auto;
+}
+
+div.sponsorsResponsiveLevelsGuide img{
+  object-fit: contain;
+  aspect-ratio: 2;
+  width: 100%;
+  height: auto;
+}
+
+.sponsorsResponsiveLevels{
+  background-color: var(--mediumnavy);  
+  display: table;
+  font-family: 'Bruno Ace';
+  font-size: 10vh;
+  color: rgba(255, 255, 255, 0.882);
+  padding: 10px 0px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  text-justify: auto;
+}
+
+.sponsorsResponsiveLevels_1{
+  background-color: var(--mediumnavy);  
+  display: table;
+  font-family: 'Bruno Ace';
+  font-size: 5vh;
+  color: rgba(255, 255, 255, 0.882);
+  padding: 2vh 0vw;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  text-justify: auto;
+}
+
+.sponsorsResponsiveSize_1 {
   background-color: var(--mediumnavy);  
   padding: 0 0.5%;
   float: left;
@@ -655,7 +701,15 @@ a:visited {
   
 }
 
-.sponsorsResponsiveMed {
+.sponsorsResponsiveSize_2 {
+  background-color: var(--mediumnavy);  
+  padding: 0 0.5%;
+  float: left;
+  display: table;
+  width: 32%;
+}
+
+.sponsorsResponsiveSize_3 {
   background-color: var(--mediumnavy);  
   padding: 0 0.5%;
   float: left;
@@ -663,9 +717,17 @@ a:visited {
   width: 24%;
 }
 
-.sponsorsResponsiveSmall {
+.sponsorsResponsiveSize_4 {
   background-color: var(--mediumnavy);  
   padding: 0 0.5%;
+  float: left;
+  display: table;
+  width: 19%;
+}
+
+.sponsorsResponsiveSize_5 {
+  background-color: var(--mediumnavy);  
+  padding: 0 0.25%;
   float: left;
   display: table;
   width: 12%;
@@ -701,19 +763,67 @@ div.sponsorGalleryDesc {
 
 
 @media only screen and (max-width: 700px) {
-  .sponsorsResponsiveBig {
+
+  .sponsorsResponsiveLevels{
+    background-color: var(--mediumnavy);  
+    display: table;
+    font-family: 'Bruno Ace';
+    font-size: 5vh;
+    color: rgba(255, 255, 255, 0.882);
+    padding: 2% 0%;
     width: 100%;
+    height: auto;
+    text-align: center;
+    text-justify: auto;
+  }
+  
+  .sponsorsResponsiveLevels_1{
+    background-color: var(--mediumnavy);  
+    display: table;
+    font-family: 'Bruno Ace';
+    font-size: 5vh;
+    color: rgba(255, 255, 255, 0.882);
+    padding: 2% 0%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-justify: auto;
+  }
+
+  .sponsorsResponsiveSize_1 {
+    width: 99%;
     margin: 6px 0;
   }
 
-  .sponsorsResponsiveMed {
+  .sponsorsResponsiveSize_2 {
     width: 48%;
     margin: 6px 0;
   }
 
-  .sponsorsResponsiveSmall {
+  .sponsorsResponsiveSize_3 {
     width: 48%;
     margin: 6px 0;
+  }
+
+  .sponsorsResponsiveSize_4 {
+    width: 33%;
+    margin: 6px 0;
+  }
+
+  .sponsorsResponsiveSize_5 {
+    width: 24%;
+    margin: 6px 0;
+  }
+
+  .sponsorsResponsiveLevelsGuide{
+    background-color: var(--mediumnavy);  
+    display: table;
+    color: rgba(255, 255, 255, 0.882);
+    padding: 2% 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-justify: auto;
   }
 }
 
