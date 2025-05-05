@@ -559,9 +559,10 @@ a:visited {
   background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
   width: 100%; /* 100vw*/
   height: auto;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   box-shadow: inset 0px 7px 12px 0px rgba(0, 0, 0, .21);
   padding: 3% 0 0 0;
 }
@@ -698,7 +699,6 @@ div.sponsorsResponsiveLevelsGuide img{
   float: left;
   display: table;
   width: 48.5%;
-  
 }
 
 .sponsorsResponsiveSize_2 {
