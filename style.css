@@ -326,7 +326,7 @@ a:visited {
   background-size: cover;
   height: 75vh;
   width: fill;
-  background-position: 0vw -75vh;
+  background-position: 0vw -45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -984,6 +984,16 @@ div.sponsorGalleryDesc {
 
 }
 
+.imagesRobot2025 {
+  background: url(images/robotProfileImages/robot2025.JPG) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  height: 100vh;
+  background-position: 15vw 0vh;
+}
+
 .imagesRobot2024 {
   background: url(images/robotProfileImages/robot2024.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
@@ -992,7 +1002,6 @@ div.sponsorGalleryDesc {
   background-size: contain;
   height: 100vh;
   background-position: 30vw 0vh;
-  
 }
 
 .imagesRobot2023 {
