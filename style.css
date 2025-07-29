@@ -760,8 +760,6 @@ div.sponsorGalleryDesc {
   text-justify: auto;
 }
 
-
-
 @media only screen and (max-width: 700px) {
 
   .sponsorsResponsiveLevels{
@@ -931,7 +929,17 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: -10vw 0vh;
+  background-position: -20vw 0vh;
+}
+
+.imagesTeamControlSection {
+  background: url(images/control.gif) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: 5vw 0vh;
 }
 
 .imagesTeamProgramSection {
@@ -941,7 +949,7 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: 0vw 0vh;
+  background-position: -25vw 0vh;
 }
 
 .imagesTeamMediaSection {
@@ -951,7 +959,7 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: -20vw -10vh;
+  background-position: 5vw -10vh;
 }
 
 .imagesTeamDriveSection {
@@ -961,7 +969,7 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: 15vw -0vh;
+  background-position: -15vw -0vh;
 }
 
 .imagesTeamPitSection {
@@ -971,7 +979,7 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: -24vw -60vh;
+  background-position: 10vw -60vh;
 }
 .imagesTeamScoutSection {
   background: url(images/scouting.jpg) no-repeat top center fixed; 
@@ -980,7 +988,7 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: 12vw -25vh;
+  background-position: 0vw -25vh;
 
 }
 
