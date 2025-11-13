@@ -65,57 +65,61 @@
             This guide will take you through everything from wiring the control system to setting up your custom VS Code environment and even building a basic drivetrain for your robot.</p>
         <h2 class="pageHeaders">
             2. <strong>WPILib Tools Overview</strong></h2>
-        
         <p class="pagePara">
-            WPILib provides a range of tools that you’ll use for your robot’s control system and software. Get familiar with them here:
+            WPILib provides a range of tools that you’ll use for your robot’s control system and software. This is the main library
+            that FIRST uses and it's advised to get familiar with this library and where the documentation for the functions are.
+            <br>Get familiar with them here:
+            <a href="https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html">WPILib Tools Overview</a>
         </p>
         <h2 class="pageHeaders">
-            <a href="https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html">WPILib Tools Overview</a></h2>
-        <h2 class="pageHeaders">
-            3. <strong>Path Planning for Autonomous Routines</strong></h2>
-        <p class="pagePara">
-            We use <strong>PathPlanner</strong> for creating autonomous paths for the robot. Explore it here:
+            3. <strong>WPILib Documentation</strong></h2>
+        <p class="pagePara">The WPILib documentation is a key <strong>resource</strong> for everything you&#39;ll need while working with the libraries. Be sure to bookmark this link:
+            <a href="https://github.wpilib.org/allwpilib/docs/release/cpp/index.html">WPILib Docs</a>
         </p>
-        <h2 class="pageHeaders"><a href="https://pathplanner.dev/home.html">PathPlanner</a></h2>
         <h2 class="pageHeaders">
-            4. <strong>Understanding Units</strong></h2>
+            4. <strong>Path Planning for Autonomous Routines</strong></h2>
+        <p class="pagePara">
+            We use <strong>PathPlanner</strong> for creating autonomous paths for the robot. 
+            Pathplanner is a third party program that helps with creating trajectories for the robot based off of set waypoints
+            and makes it easier to chain together paths and robot mechanism actions for autonomous routines.
+            <br>Explore it here:
+            <a href="https://pathplanner.dev/home.html">PathPlanner</a>
+        </p>
+        <h2 class="pageHeaders">
+            5. <strong>Understanding Units</strong></h2>
         <p class="pagePara">
             When we command robot components to move to specific angles or at certain speeds, 
             we use &quot;units&quot; to handle this. Learn how to work with units here:
+            <a href="https://docs.wpilib.org/en/stable/docs/software/basic-programming/cpp-units.html">WPILib Units</a>
         </p>
+        
         <h2 class="pageHeaders">
-            <a href="https://docs.wpilib.org/en/stable/docs/software/basic-programming/cpp-units.html">WPILib Units</a></h2>
-        <h2 class="pageHeaders">
-            5. <strong>Robot Dashboard: AdvantageScope</strong></h2>
+            6. <strong>Robot Dashboard: AdvantageScope</strong></h2>
         <p class="pagePara">We are transitioning to using <strong>AdvantageScope</strong> for robot dashboards. Check out the details below:</p>
         <ul class="pagePara3">
             <li><a href="https://docs.wpilib.org/en/stable/docs/software/dashboards/advantagescope.html">AdvantageScope Overview</a></li>
             <li><a href="https://github.com/Mechanical-Advantage/AdvantageScope/blob/main/docs/INDEX.md">AdvantageScope Usage Guide</a></li>
         </ul>
-        <hr>
-        <h2 class="pageHeaders">
-            6. <strong>WPILib Documentation</strong></h2>
-        <p class="pagePara">The WPILib documentation is a key <strong>resource</strong> for everything you&#39;ll need while working with the libraries. Be sure to bookmark this link:</p>
-        <h2 class="pageHeaders">
-            <a href="https://github.wpilib.org/allwpilib/docs/release/cpp/index.html">WPILib Docs</a></h2>
+        
         <h2 class="pageHeaders">
             7. <strong>NetworkTables</strong></h2>
-        <p class="pagePara">We use <strong>NetworkTables</strong> to communicate data across the robot system using a publish/subscribe model. Dive into it here:</p>
-        <h2 class="pageHeaders">
-            <a href="https://docs.wpilib.org/en/stable/docs/software/networktables/index.html">NetworkTables</a></h2>
+        <p class="pagePara">We use <strong>NetworkTables</strong> to communicate data across the robot system using a publish/subscribe model. Dive into it here:
+        <a href="https://docs.wpilib.org/en/stable/docs/software/networktables/index.html">NetworkTables</a>
+        </p>
         <h2 class="pageHeaders">
             8. <strong>Robot Simulation</strong></h2>
         <p class="pagePara">
-            Simulation is a powerful way to test your robot’s code without needing the physical robot. Learn how to simulate your robot:</p>
-        <h2 class="pageHeaders">
-            <a href="https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html">Robot Simulation</a></h2>
+            Simulation is a powerful way to test your robot’s code without needing the physical robot. Learn how to simulate your robot:
+            <a href="https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html">Robot Simulation</a>
+        </p>
+        
         <h2 class="pageHeaders">
             9. <strong>Command-Based Programming</strong></h2>
         <p class="pagePara">
             We use <strong>Command-Based Programming</strong> to organize robot actions. Start learning it here:
+            <a href="https://docs.wpilib.org/en/stable/docs/software/commandbased/index.html">Command-Based Programming</a>
         </p>
-        <h2 class="pageHeaders">
-            <a href="https://docs.wpilib.org/en/stable/docs/software/commandbased/index.html">Command-Based Programming</a></h2>
+    
         <h2 class="pageHeaders">
             10. <strong>ProfiledPIDSubsystem</strong></h2>
         <p class="pagePara">For controlling systems like rotary joints and flywheels, we use <strong>ProfiledPIDSubsystem</strong>. Learn more about it here:</p>
