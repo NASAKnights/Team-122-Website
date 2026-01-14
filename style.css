@@ -556,7 +556,8 @@ a:visited {
 }
 
 .pageBody2 {
-  background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%);
+  /* background-image: linear-gradient(var(--lightblue)0.10%, var(--mediumnavy)0.10%); */
+  background-color: var(--mediumnavy);
   width: 100%; /* 100vw*/
   height: auto;
   justify-content: center;
@@ -615,6 +616,15 @@ a:visited {
   margin: 1em 0em 1em 2em;
 }
 
+.pagePara4 {
+  font-family: 'Comme';
+  font-size: 150%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 4em;
+  margin: 1em 0em 1em 2em;
+  text-align: center;
+}
+
 .pageDown {
   transition: .3s;
   color: rgba(255, 255, 255, 0.882);
@@ -640,7 +650,20 @@ a:visited {
 
 /* ---------------------------- Sponsors -----------------------------*/
 
+.sponsorInfoButton{
+  color: white; /* Font color */
+  background-color: var(--lightblue);
+  border: none;
+  font-size: 150%;
+  font-family: 'Bruno Ace';
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
 
+.sponsorInfoButton:hover{
+  background-color: var(--lightnavy);
+}
 
 .sponsorsResponsiveSpace{
   background-color: var(--mediumnavy);  
@@ -993,13 +1016,26 @@ div.sponsorGalleryDesc {
 }
 
 .imagesRobot2025 {
-  background: url(images/robotProfileImages/robot2025.JPG) no-repeat top center fixed; 
-  -webkit-background-size: cover;
+  background-image: url(images/robotProfileImages/robot2025.JPG);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-position: 15vw 0vh;
+  -webkit-background-size:  cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: contain;
-  height: 100vh;
-  background-position: 15vw 0vh;
+  /* height: 92vh;
+  background-image: url(images/robotProfileImages/robot2025.JPG), url(images/robotProfileImages/robot2025.JPG);
+  background-position: 17vw 0vh, -5vw -90vh;
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  -webkit-background-size:  contain, cover;
+  -moz-background-size: contain, cover;
+  -o-background-size: contain, cover; */
 }
 
 .imagesRobot2024 {
