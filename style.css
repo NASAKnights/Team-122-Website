@@ -319,14 +319,14 @@ a:visited {
 
 
 .bannerTeamBackground {
-  background: url(images/bannerBackground/banner-team-students.jpg);
+  background: url(images/bannerBackground/banner-team-students2026.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
   height: 75vh;
   width: fill;
-  background-position: 0vw -10vh;
+  background-position: 0vw 0vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1002,7 +1002,7 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: 10vw -60vh;
+  background-position: 10vw -10vh;
 }
 .imagesTeamScoutSection {
   background: url(images/scouting.jpg) no-repeat top center fixed; 
@@ -1013,6 +1013,16 @@ div.sponsorGalleryDesc {
   height: 100vh;
   background-position: 0vw -25vh;
 
+}
+
+.imagesRobot2026 {
+  background: url(images/robotProfileImages/robot2026.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:contain;
+  height: 100vh;
+  background-position: 25vw 0vh;
 }
 
 .imagesRobot2025 {
@@ -1089,7 +1099,7 @@ div.sponsorGalleryDesc {
       width: fill;
     }
     .bannerTeamBackground {
-      background-position: -50vw -20vh;
+      background-position: 0vw 0vh;
     }
     .pageHeaders {
       background-image: linear-gradient(var(--lightblue)1.2%, var(--mediumnavy)1.2%);
@@ -1166,6 +1176,14 @@ div.sponsorGalleryDesc {
     .imagesTeamProgramSection {background-position: 0vw 0vh;}
     .imagesTeamScoutSection {background-position: 0vw 0vh;}
 
+    .imagesRobot2026{
+      background-position: 0vw 0vh;
+      background-size: cover;
+    }
+    .imagesRobot2025{
+      background-position: 0vw -60vh;
+      background-size: cover;
+    }
     .imagesRobot2024{
       background-position: -60vw 0vh;
       background-size: cover;
