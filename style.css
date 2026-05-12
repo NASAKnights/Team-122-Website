@@ -901,24 +901,24 @@ div.sponsorGalleryDesc {
 
 .imagesHomepageSectionOne {
   /* background: url(images/news.jpg) no-repeat top center fixed;  */
-  background: url(images/team1.JPG) no-repeat top center fixed;
+  background: url(images/team-general.jpg) no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
-  background-position: 0vw 0vh;
+  height: 125vh;
+  background-position: 0vw -20vh;
 }
 
 .imagesHomepageSectionTwo {
   /* background: url(images/2023-team-portsmouth.png) no-repeat top center fixed;  */
-  background: url(images/2024-team-portsmouth.JPG) no-repeat top center fixed; 
+  background: url(images/2026-team-chs.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: -11vw -0vh;
+  background-position: -5vw -5vh;
 }
 
 .imagesHomepageSectionThree {
@@ -1011,7 +1011,7 @@ div.sponsorGalleryDesc {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-position: 0vw -25vh;
+  background-position: -15vw -25vh;
 
 }
 
@@ -1088,7 +1088,7 @@ div.sponsorGalleryDesc {
     } */
     .bannerText {font-size: 10vw;}
     .banner {
-      background: linear-gradient(rgba(0, 16, 38, 0.5), rgba(0, 13, 30, 0.5)), url(images/banner.JPG);
+      background: linear-gradient(rgba(0, 16, 38, 0.5), rgba(0, 13, 30, 0.5)), url(images/banner2024.JPG);
       background-repeat: no-repeat;
       background-position: top;
       background-attachment: fixed;
@@ -1167,6 +1167,10 @@ div.sponsorGalleryDesc {
     }
 
   /* --------------Images adjustment for mobile--------------------- */
+
+    .imagesHomepageSectionOne{background-position: 0vw 0vh;}
+    .imagesHomepageSectionTwo{background-position: 0vw 0vh;}
+    .imagesHomepageSectionThree{background-position: 0vw 0vh;}
 
     .imagesTeamDriveSection {background-position: 0vw 0vh;}
     .imagesTeamElectricalSection {background-position: 0vw 0vh;}
